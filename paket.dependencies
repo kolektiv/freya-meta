@@ -1,9 +1,9 @@
 source http://nuget.org/api/v2
 source https://www.myget.org/F/freya/api/v2
 
-nuget Freya.Machines.Http       ~> 4.0.0-b
-nuget Freya.Machines.Http.Cors  ~> 4.0.0-b
-nuget Freya.Routers.UriTemplate ~> 4.0.0-b
+nuget Freya.Machines.Http       ~> 3.0.0-b
+nuget Freya.Machines.Http.Cors  ~> 3.0.0-b
+nuget Freya.Routers.UriTemplate ~> 3.0.0-b
 
 group Build
 
