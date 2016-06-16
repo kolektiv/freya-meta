@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{FFB3924E-0CB4-4FE2-8643-E114445FA168}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{80B9DE71-9FC3-48F5-9B9E-66A0D08A7261}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{DD21AD01-1255-4E84-9981-5905E2BDE1C8}"
+	ProjectSection(SolutionItems) = preProject
+		src\Freya.Meta\Freya.Meta.fsproj.paket.template = src\Freya.Meta\Freya.Meta.fsproj.paket.template
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{FDFA6623-65B8-4569-97E2-23766946A94A}"
+	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D752DE3C-8740-4C02-BD15-D139D5B171B8}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Meta", "src\Freya.Meta\Freya.Meta.fsproj", "{C2EAAC0B-4B52-4943-8ED2-D8328F59686C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EAA5BA75-452F-4F2A-B05C-F3E3A56192F7}"
+	ProjectSection(SolutionItems) = preProject
+		src\Freya.Meta\Freya.Meta.fsproj.paket.references = src\Freya.Meta\Freya.Meta.fsproj.paket.references
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2EAAC0B-4B52-4943-8ED2-D8328F59686C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EAAC0B-4B52-4943-8ED2-D8328F59686C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EAAC0B-4B52-4943-8ED2-D8328F59686C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EAAC0B-4B52-4943-8ED2-D8328F59686C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80B9DE71-9FC3-48F5-9B9E-66A0D08A7261} = {FFB3924E-0CB4-4FE2-8643-E114445FA168}
+		{DD21AD01-1255-4E84-9981-5905E2BDE1C8} = {FFB3924E-0CB4-4FE2-8643-E114445FA168}
+		{FDFA6623-65B8-4569-97E2-23766946A94A} = {FFB3924E-0CB4-4FE2-8643-E114445FA168}
+		{C2EAAC0B-4B52-4943-8ED2-D8328F59686C} = {D752DE3C-8740-4C02-BD15-D139D5B171B8}
+		{EAA5BA75-452F-4F2A-B05C-F3E3A56192F7} = {80B9DE71-9FC3-48F5-9B9E-66A0D08A7261}
+	EndGlobalSection
+EndGlobal
