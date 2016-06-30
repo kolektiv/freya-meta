@@ -215,6 +215,17 @@
   <Choose>
     <When Condition="($(TargetFrameworkIdentifier) == '.NETStandard' And ($(TargetFrameworkVersion) == 'v1.2' Or $(TargetFrameworkVersion) == 'v1.3' Or $(TargetFrameworkVersion) == 'v1.4' Or $(TargetFrameworkVersion) == 'v1.5')) Or ($(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2'))">
       <ItemGroup>
+        <Reference Include="Freya.Polyfills">
+          <HintPath>..\..\packages\Freya.Polyfills\lib\net452\Freya.Polyfills.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Choose>
+    <When Condition="($(TargetFrameworkIdentifier) == '.NETStandard' And ($(TargetFrameworkVersion) == 'v1.2' Or $(TargetFrameworkVersion) == 'v1.3' Or $(TargetFrameworkVersion) == 'v1.4' Or $(TargetFrameworkVersion) == 'v1.5')) Or ($(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2'))">
+      <ItemGroup>
         <Reference Include="Freya.Routers">
           <HintPath>..\..\packages\Freya.Routers\lib\net452\Freya.Routers.dll</HintPath>
           <Private>True</Private>
@@ -226,8 +237,8 @@
   <Choose>
     <When Condition="($(TargetFrameworkIdentifier) == '.NETStandard' And ($(TargetFrameworkVersion) == 'v1.2' Or $(TargetFrameworkVersion) == 'v1.3' Or $(TargetFrameworkVersion) == 'v1.4' Or $(TargetFrameworkVersion) == 'v1.5')) Or ($(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2'))">
       <ItemGroup>
-        <Reference Include="Freya.Routers.UriTemplate">
-          <HintPath>..\..\packages\Freya.Routers.UriTemplate\lib\net452\Freya.Routers.UriTemplate.dll</HintPath>
+        <Reference Include="Freya.Routers.Uri.Template">
+          <HintPath>..\..\packages\Freya.Routers.Uri.Template\lib\net452\Freya.Routers.Uri.Template.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
