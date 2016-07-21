@@ -1,9 +1,26 @@
-source http://nuget.org/api/v2
-source https://www.myget.org/F/freya/api/v2
+// Code
 
-nuget Freya.Machines.Http        ~> 3.0.0-b
-nuget Freya.Machines.Http.Cors   ~> 3.0.0-b
-nuget Freya.Routers.Uri.Template ~> 3.0.0-b
+group Async
+
+  source http://nuget.org/api/v2
+  source https://www.myget.org/F/freya/api/v2
+
+  nuget Freya.Machines.Http        ~> 3.0.0-rc
+  nuget Freya.Machines.Http.Cors   ~> 3.0.0-rc
+  nuget Freya.Machines.Http.Patch  ~> 3.0.0-rc
+  nuget Freya.Routers.Uri.Template ~> 3.0.0-rc
+
+group Hopac
+
+  source http://nuget.org/api/v2
+  source https://www.myget.org/F/freya/api/v2
+
+  nuget Freya.Machines.Http.Hopac        ~> 3.0.0-rc
+  nuget Freya.Machines.Http.Cors.Hopac   ~> 3.0.0-rc
+  nuget Freya.Machines.Http.Patch.Hopac  ~> 3.0.0-rc
+  nuget Freya.Routers.Uri.Template.Hopac ~> 3.0.0-rc
+
+// Build
 
 group Build
 

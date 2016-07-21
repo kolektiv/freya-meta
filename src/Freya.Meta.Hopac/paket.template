@@ -1,14 +1,14 @@
 ﻿type project
 id
-    Freya
+    Freya.Hopac
 title
-    Freya
+    Freya.Hopac
 description
-    Batteries-included Freya Stack
+    Batteries-included Freya Stack (Hopac implementation)
 tags
-    functional, web, f#, freya
+    functional, web, f#, freya, hopac
 version
-    3.0.0-b302
+    3.0.0-rc01
 owners
     Andrew Cherry, Ryan Riley
 authors
